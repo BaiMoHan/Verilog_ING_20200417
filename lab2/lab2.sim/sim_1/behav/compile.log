@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab2/lab2.srcs/sources_1/new/TwoChoseOneDF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwoChOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab2/lab2.srcs/sources_1/new/TwoChOneSt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwoChOneSt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab2/lab2.srcs/sources_1/new/TwoChOneBh.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwoChOneBh
+WARNING: [VRFC 10-1315] redeclaration of ansi port out1 is not allowed [D:/verilogLab/lab2/lab2.srcs/sources_1/new/TwoChOneBh.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab2/lab2.srcs/sources_1/new/ThreeChOne.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ThreeChOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab2/lab2.srcs/sources_1/new/_3To8_Translate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _3To8_Translate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab2/lab2.srcs/sim_1/new/_3To8_Translate_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _3To8_Translate_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab2/lab2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
