@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab3/lab3.srcs/sources_1/new/lab3_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT4_synch_reset_enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab3/lab3.srcs/sim_1/new/lab3_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilogLab/lab3/lab3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
