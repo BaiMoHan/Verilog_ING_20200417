@@ -27,7 +27,7 @@ module register(clk,rst,en,d,q);//时钟端，复位，使能，输入，输出
     output reg [WIDTH-1:0] q;
     
     always @(posedge clk)begin
-        if(!rst)
+        if(rst)
             q<=0;
         else if(en)
             q<=d;

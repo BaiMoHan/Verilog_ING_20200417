@@ -24,6 +24,7 @@ module mux_21(a,b,sel,out);
     parameter WIDTH=8;//n位二选一选择器
     input [WIDTH-1:0] a,b;
     input sel;
-    output [WIDTH-1:0] out;
-    assign out=(sel==0)?a:b;//0选择a，1选择b
+    output  reg [WIDTH-1:0] out;
+    always@(a,b,sel)
+        out<=(sel==0)?a:b;//0选择a，1选择b
 endmodule
