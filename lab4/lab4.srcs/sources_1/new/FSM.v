@@ -80,6 +80,15 @@ module FSM(clk,rst,start,next_zero,LD_SUM,LD_NEXT,SUM_SEL,NEXT_SEL,A_SEL,DONE);
                     statenext<=S0;
             end
             
+          default: begin
+            LD_SUM <= 0;
+            LD_NEXT <= 0;
+            SUM_SEL <= 0;
+            NEXT_SEL <= 0;
+            A_SEL <= 0;
+            DONE <= 0;
+            statenext<=S0;
+           end
         endcase
     end
     

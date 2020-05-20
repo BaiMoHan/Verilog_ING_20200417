@@ -26,5 +26,5 @@ module mux_21(a,b,sel,out);
     input sel;
     output  reg [WIDTH-1:0] out;
     always@(a,b,sel)
-        out<=(sel==0)?a:b;//0选择a，1选择b
+        out<=(sel)?b:a;//0选择a，1选择b
 endmodule

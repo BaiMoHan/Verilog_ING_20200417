@@ -23,7 +23,8 @@
 module full_adder(a,b,out);//加数，被加数，输出   此处去掉了进位端口
     parameter WIDTH=8;//输出宽度
     input [WIDTH-1:0] a,b;
-    output reg [WIDTH-1:0] out;
-    always@(a,b)
-        out<=a+b;
+    output [WIDTH-1:0] out;
+    wire [WIDTH:0] d;
+    assign d=a+b;
+    assign out=d[WIDTH-1:0];
 endmodule

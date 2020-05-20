@@ -1,10 +1,10 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Thu May 07 07:47:30 2020
+| Date         : Fri May 15 15:45:56 2020
 | Host         : LAPTOP-9040DAJS running 64-bit major release  (build 9200)
-| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file auto_add_timing_summary_routed.rpt -rpx auto_add_timing_summary_routed.rpx
-| Design       : auto_add
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file datapath_timing_summary_routed.rpt -rpx datapath_timing_summary_routed.rpx
+| Design       : datapath
 | Device       : 7a100t-csg324
 | Speed File   : -1  PRODUCTION 1.14 2014-09-11
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 34 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 36 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
 
 2. checking constant_clock
@@ -65,14 +65,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 98 pins that are not constrained for maximum delay. (HIGH)
+ There are 108 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 3 input ports with no input delay specified. (HIGH)
+ There are 7 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 

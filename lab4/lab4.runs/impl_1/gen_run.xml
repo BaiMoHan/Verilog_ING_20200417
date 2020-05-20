@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1588808780">
-  <File Type="OPT-DCP" Name="auto_add_opt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1589528693">
+  <File Type="OPT-DCP" Name="datapath_opt.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
-  <File Type="PWROPT-DCP" Name="auto_add_pwropt.dcp"/>
-  <File Type="ROUTE-DCP" Name="auto_add_routed.dcp"/>
-  <File Type="PA-TCL" Name="auto_add.tcl"/>
+  <File Type="PWROPT-DCP" Name="datapath_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="datapath_routed.dcp"/>
+  <File Type="PA-TCL" Name="datapath.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="OPT-DRC" Name="auto_add_drc_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="auto_add_drc_pwropted.rpt"/>
-  <File Type="OPT-HWDEF" Name="auto_add.hwdef"/>
-  <File Type="PLACE-DCP" Name="auto_add_placed.dcp"/>
-  <File Type="PLACE-IO" Name="auto_add_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="auto_add_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="auto_add_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="auto_add_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="auto_add_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="auto_add_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="auto_add_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="auto_add_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="auto_add_physopt.dcp"/>
-  <File Type="RDI-RDI" Name="auto_add.vdi"/>
-  <File Type="PHYSOPT-DRC" Name="auto_add_drc_physopted.rpt"/>
-  <File Type="ROUTE-DRC" Name="auto_add_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="auto_add_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="auto_add_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="auto_add_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="auto_add_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="auto_add_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="auto_add_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="auto_add_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="auto_add_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="auto_add_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="auto_add_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="auto_add_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="auto_add_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="auto_add_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="auto_add_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="auto_add.bit"/>
-  <File Type="BG-BIN" Name="auto_add.bin"/>
-  <File Type="BITSTR-MSK" Name="auto_add.msk"/>
-  <File Type="BITSTR-RBT" Name="auto_add.rbt"/>
-  <File Type="BITSTR-NKY" Name="auto_add.nky"/>
-  <File Type="BITSTR-BMM" Name="auto_add_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="auto_add.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="auto_add.sysdef"/>
-  <File Type="BG-BGN" Name="auto_add.bgn"/>
-  <File Type="BG-DRC" Name="auto_add.drc"/>
+  <File Type="OPT-DRC" Name="datapath_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="datapath_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="datapath.hwdef"/>
+  <File Type="PLACE-DCP" Name="datapath_placed.dcp"/>
+  <File Type="PLACE-IO" Name="datapath_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="datapath_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="datapath_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="datapath_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="datapath_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="datapath_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="datapath_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="datapath_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="datapath_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="datapath.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="datapath_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="datapath_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="datapath_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="datapath_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="datapath_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="datapath_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="datapath_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="datapath_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="datapath_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="datapath_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="datapath_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="datapath_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="datapath_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="datapath_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="datapath_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="datapath_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="datapath.bit"/>
+  <File Type="BG-BIN" Name="datapath.bin"/>
+  <File Type="BITSTR-MSK" Name="datapath.msk"/>
+  <File Type="BITSTR-RBT" Name="datapath.rbt"/>
+  <File Type="BITSTR-NKY" Name="datapath.nky"/>
+  <File Type="BITSTR-BMM" Name="datapath_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="datapath.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="datapath.sysdef"/>
+  <File Type="BG-BGN" Name="datapath.bgn"/>
+  <File Type="BG-DRC" Name="datapath.drc"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -85,13 +85,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/FSM.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/datapath.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -99,8 +92,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/auto_add.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -108,7 +110,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="auto_add"/>
+      <Option Name="TopModule" Val="datapath"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

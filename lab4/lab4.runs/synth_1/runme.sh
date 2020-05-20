@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log auto_add.vds -m64 -mode batch -messageDb vivado.pb -notrace -source auto_add.tcl
+EAStep vivado -log datapath.vds -m64 -mode batch -messageDb vivado.pb -notrace -source datapath.tcl

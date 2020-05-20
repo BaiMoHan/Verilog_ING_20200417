@@ -25,5 +25,5 @@ module comparator(a,flag);//此处的比较器是来判断是不是为0
     input [WIDTH-1:0] a;//待判断的数
     output reg flag;
     always@(a)
-         flag<=(a==0)?1'b1:1'b0;
+         flag<=(a==0)?1:0;
 endmodule

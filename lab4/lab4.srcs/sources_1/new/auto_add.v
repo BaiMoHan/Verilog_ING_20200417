@@ -26,7 +26,7 @@ module auto_add(clk,rst,start,DONE,sum_out);
     output [31:0] sum_out;
     
     wire LD_SUM,LD_NEXT,SUM_SEL,NEXT_SEL, A_SEL,NEXT_ZERO;
-    
-    datapath mydatapath(.clk(clk),.rst(rst),.SUM_SEL(SUM_SEL),.NEXT_SEL(NEXT_SEL),.A_SEL(A_SEL),.LD_SUM(LD_SUM),.LD_NEXT(LDNEXT),.NEXT_ZERO(NEXT_ZERO),.sum_out(sum_out));
-    FSM myFSM(.clk(clk),.rst(rst),.start(start),.next_zero(NEXT_ZERO),.LD_SUM(LD_SUM),.LD_NEXT(LD_NEXT),.SUM_SEL(SUM_SEL),.NEXT_SEL(NEXT_SEL),.A_SEL(A_SEL),.DONE(DONE));
+     FSM myFSM(.clk(clk),.rst(rst),.start(start),.next_zero(NEXT_ZERO),.LD_SUM(LD_SUM),.LD_NEXT(LD_NEXT),.SUM_SEL(SUM_SEL),.NEXT_SEL(NEXT_SEL),.A_SEL(A_SEL),.DONE(DONE));
+    datapath mydatapath(.clk(clk),.rst(rst),.SUM_SEL(SUM_SEL),.NEXT_SEL(NEXT_SEL),.A_SEL(A_SEL),.LD_SUM(LD_SUM),.LD_NEXT(LD_NEXT),.NEXT_ZERO(NEXT_ZERO),.sum_out(sum_out));
+   
 endmodule

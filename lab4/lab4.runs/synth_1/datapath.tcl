@@ -3,6 +3,7 @@
 # 
 
 debug::add_scope template.lib 1
+set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -19,10 +20,8 @@ read_verilog -library xil_defaultlib {
   D:/verilogLab/lab4/lab4.srcs/sources_1/new/mux_21.v
   D:/verilogLab/lab4/lab4.srcs/sources_1/new/full_adder.v
   D:/verilogLab/lab4/lab4.srcs/sources_1/new/comparator.v
-  D:/verilogLab/lab4/lab4.srcs/sources_1/new/FSM.v
   D:/verilogLab/lab4/lab4.srcs/sources_1/new/datapath.v
-  D:/verilogLab/lab4/lab4.srcs/sources_1/new/auto_add.v
 }
-synth_design -top auto_add -part xc7a100tcsg324-1
-write_checkpoint -noxdef auto_add.dcp
-catch { report_utilization -file auto_add_utilization_synth.rpt -pb auto_add_utilization_synth.pb }
+synth_design -top datapath -part xc7a100tcsg324-1
+write_checkpoint -noxdef datapath.dcp
+catch { report_utilization -file datapath_utilization_synth.rpt -pb datapath_utilization_synth.pb }

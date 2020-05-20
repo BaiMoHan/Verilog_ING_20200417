@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -54,8 +55,8 @@ set rc [catch {
   set_property parent.project_path D:/verilogLab/lab4/lab4.xpr [current_project]
   set_property ip_repo_paths d:/verilogLab/lab4/lab4.cache/ip [current_project]
   set_property ip_output_repo d:/verilogLab/lab4/lab4.cache/ip [current_project]
-  add_files -quiet D:/verilogLab/lab4/lab4.runs/synth_1/auto_add.dcp
-  link_design -top auto_add -part xc7a100tcsg324-1
+  add_files -quiet D:/verilogLab/lab4/lab4.runs/synth_1/datapath.dcp
+  link_design -top datapath -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -70,8 +71,8 @@ set rc [catch {
   create_msg_db opt_design.pb
   catch {write_debug_probes -quiet -force debug_nets}
   opt_design 
-  write_checkpoint -force auto_add_opt.dcp
-  catch {report_drc -file auto_add_drc_opted.rpt}
+  write_checkpoint -force datapath_opt.dcp
+  catch {report_drc -file datapath_drc_opted.rpt}
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -84,12 +85,12 @@ if {$rc} {
 start_step place_design
 set rc [catch {
   create_msg_db place_design.pb
-  catch {write_hwdef -file auto_add.hwdef}
+  catch {write_hwdef -file datapath.hwdef}
   place_design 
-  write_checkpoint -force auto_add_placed.dcp
-  catch { report_io -file auto_add_io_placed.rpt }
-  catch { report_utilization -file auto_add_utilization_placed.rpt -pb auto_add_utilization_placed.pb }
-  catch { report_control_sets -verbose -file auto_add_control_sets_placed.rpt }
+  write_checkpoint -force datapath_placed.dcp
+  catch { report_io -file datapath_io_placed.rpt }
+  catch { report_utilization -file datapath_utilization_placed.rpt -pb datapath_utilization_placed.pb }
+  catch { report_control_sets -verbose -file datapath_control_sets_placed.rpt }
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -103,12 +104,12 @@ start_step route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force auto_add_routed.dcp
-  catch { report_drc -file auto_add_drc_routed.rpt -pb auto_add_drc_routed.pb }
-  catch { report_timing_summary -warn_on_violation -max_paths 10 -file auto_add_timing_summary_routed.rpt -rpx auto_add_timing_summary_routed.rpx }
-  catch { report_power -file auto_add_power_routed.rpt -pb auto_add_power_summary_routed.pb }
-  catch { report_route_status -file auto_add_route_status.rpt -pb auto_add_route_status.pb }
-  catch { report_clock_utilization -file auto_add_clock_utilization_routed.rpt }
+  write_checkpoint -force datapath_routed.dcp
+  catch { report_drc -file datapath_drc_routed.rpt -pb datapath_drc_routed.pb }
+  catch { report_timing_summary -warn_on_violation -max_paths 10 -file datapath_timing_summary_routed.rpt -rpx datapath_timing_summary_routed.rpx }
+  catch { report_power -file datapath_power_routed.rpt -pb datapath_power_summary_routed.pb }
+  catch { report_route_status -file datapath_route_status.rpt -pb datapath_route_status.pb }
+  catch { report_clock_utilization -file datapath_clock_utilization_routed.rpt }
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
